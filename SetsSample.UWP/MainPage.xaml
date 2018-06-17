@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="SetsSample.UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SetsSample.UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ComboBox x:Name="Preference" HorizontalAlignment="Stretch">
+                <x:String>Default</x:String>
+                <x:String>WithSource</x:String>
+                <x:String>Separate</x:String>
+            </ComboBox>
+            <Button Click="LaunchUri" HorizontalAlignment="Stretch">LaunchUri</Button>
+            <Button Click="LaunchFile" HorizontalAlignment="Stretch">LaunchFile</Button>
+            <Button Click="LaunchFolder" HorizontalAlignment="Stretch">LaunchFolder</Button>
+            <Button Click="OpenView" HorizontalAlignment="Stretch">OpenView</Button>
+        </StackPanel>
+    </Grid>
+</Page>
